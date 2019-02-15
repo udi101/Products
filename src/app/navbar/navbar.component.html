@@ -1,7 +1,7 @@
 <div class="button-row">
   <button mat-button color="primary" [disableRipple]="true" [matMenuTriggerFor]="productsMenu">Menu</button>
   <mat-menu #productsMenu="matMenu">
-    <div mat-menu-item>Product List</div>
+    <div mat-menu-item [routerLink]="['/products']" routerLinkActive="router-link-active" >Product List</div>
     <div mat-menu-item>Product Types</div>
   </mat-menu>
 

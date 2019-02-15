@@ -1,12 +1,14 @@
 .button-row {
-background: #f0f0f0;
-display: flex;
-justify-content: flex-start;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
 
-.loginButton{
+  .loginButton {
     margin-left: auto;
-}}
+  }
+}
 
-.mat-menu-content{
-    padding: 0;
+.mat-menu-content {
+  padding: 0;
 }
