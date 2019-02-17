@@ -1,6 +1,8 @@
-<div class="flex-container" style="display:flex; justify-content: space-between">
-<div>This is a test
-  <ng-content></ng-content>
-</div>
-<div>This is a test</div>
+<div class="flex-row">
+  <div class="menu">
+    <ng-content></ng-content>
+  </div>
+  <div class="main">
+    <ng-content select="[main]"></ng-content>
+  </div>
 </div>

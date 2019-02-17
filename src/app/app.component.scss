@@ -1,0 +1,16 @@
+.HollyGrail {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+
+  .header {
+    position: sticky;
+    top: 0;
+  }
+
+  .body {
+    margin: 0 16px;
+    font-family: Lato;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
+::-webkit {
+  &-scrollbar {
+    width: 2px;
+  }
+
+  &-scrollbar-thumb {
+    background: #303030;
+    border-radius: 2px;
+  }
+}
+
+
+.mat-h3 {
+  font-family: lato;
+  font-size: 13px;
+}
+
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-auto {
+  flex: auto;
+}

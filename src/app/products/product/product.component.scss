@@ -1,0 +1,39 @@
+$text-width: 200px;
+$number-width: 100px;
+$date-width:200px;
+
+:host {
+  display: block;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  padding: 8px 0;
+
+  &.header {
+      font-weight: 600;
+  }
+
+  .text {
+    width: $text-width;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .date {
+    width: $date-width;
+  }
+
+  .number {
+    width: $number-width;
+  }
+}

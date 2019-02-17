@@ -1,3 +1,22 @@
 <layout>
-  This is a test
+  <ng-container main>
+    <div class="table-row header">
+      <div class="number">Id</div>
+      <div class="text">Product Name</div>
+      <div class="number">Category</div>
+      <div class="date">Introduction</div>
+      <div class="text">Product Url</div>
+    </div>
+
+    <div *ngFor="let p of products">
+      <div class="table-row">
+        <div class="number"> {{p?.productId}}</div>
+        <div class="text">{{p?.productName}}</div>
+        <div class="number">{{showCategory(p?.categoryId)}}</div>
+        <div class="date">{{p?.introductionDate | date}}</div>
+        <div class="text">{{p?.url}}</div>
+      </div>
+    </div>
+  </ng-container>
+  this is test
 </layout>

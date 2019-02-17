@@ -1,3 +1,11 @@
 .flex-container {
   display: flex;
 }
+
+div.main {
+  flex-grow: 1;
+}
+
+div.menu {
+  flex: 0 0 200px;
+}
